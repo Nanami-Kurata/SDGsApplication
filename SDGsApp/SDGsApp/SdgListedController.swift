@@ -10,7 +10,6 @@ import UIKit
 
 class SdgListedController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     override func viewDidLoad() {
@@ -20,13 +19,13 @@ class SdgListedController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func settingCollectionViewLayout() {
-            flowLayout.itemSize = CGSize(width: 120, height: 120)
-            flowLayout.minimumLineSpacing = 16
-            flowLayout.minimumInteritemSpacing = 16
-            let itemsPerRows = floor((UIScreen.main.bounds.width / (120 + 16)))
-            let totalLength = (120 + 16) * itemsPerRows - 16
+            flowLayout.itemSize = CGSize(width: 140, height: 140)
+            flowLayout.minimumLineSpacing = 28
+            flowLayout.minimumInteritemSpacing = 28
+            let itemsPerRows = floor((UIScreen.main.bounds.width / (140 + 28)))
+            let totalLength = (140 + 28) * itemsPerRows - 28
             let edgeInsets = (UIScreen.main.bounds.width - totalLength) / 2
-            flowLayout.sectionInset = UIEdgeInsets(top: 16, left: edgeInsets, bottom: 16,  right: edgeInsets)
+            flowLayout.sectionInset = UIEdgeInsets(top: 28, left: edgeInsets, bottom: 28,  right: edgeInsets)
             collectionView.collectionViewLayout = flowLayout
         }
     
@@ -35,8 +34,9 @@ class SdgListedController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let listCell = collectionView.dequeueReusableCell(withReuseIdentifier: "listCell", for: indexPath)
+        let listCell = collectionView.dequeueReusableCell(withReuseIdentifier: "listCell", for: indexPath) as! SDGListedViewCell
         listCell.backgroundColor = UIColor.green
+        listCell.configure(indexNumber: indexPath.row)
         return listCell
     }
 }

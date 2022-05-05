@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8748BCDD2823972300933042 /* SDGListedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748BCDC2823972300933042 /* SDGListedViewCell.swift */; };
 		8767A13727FEC33900E58F70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A13627FEC33900E58F70 /* AppDelegate.swift */; };
 		8767A13927FEC33900E58F70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A13827FEC33900E58F70 /* SceneDelegate.swift */; };
 		8767A13B27FEC33900E58F70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767A13A27FEC33900E58F70 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8748BCDC2823972300933042 /* SDGListedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDGListedViewCell.swift; sourceTree = "<group>"; };
 		8767A13327FEC33900E58F70 /* SDGsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDGsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767A13627FEC33900E58F70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8767A13827FEC33900E58F70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				8767A14127FEC33B00E58F70 /* LaunchScreen.storyboard */,
 				8767A14427FEC33B00E58F70 /* Info.plist */,
 				87DAA047280910AC00AD39FB /* SdgListedController.swift */,
+				8748BCDC2823972300933042 /* SDGListedViewCell.swift */,
 			);
 			path = SDGsApp;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				8767A13B27FEC33900E58F70 /* ViewController.swift in Sources */,
 				8767A13727FEC33900E58F70 /* AppDelegate.swift in Sources */,
 				8767A13927FEC33900E58F70 /* SceneDelegate.swift in Sources */,
+				8748BCDD2823972300933042 /* SDGListedViewCell.swift in Sources */,
 				87DAA048280910AC00AD39FB /* SdgListedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
